@@ -8,4 +8,12 @@
 
 body {
   font-family: system-ui, sans-serif;
+
+  display: flex;
+}
+aside {
+  flex-basis: 50%;
+}
+main {
+  flex-basis: auto;
 }
