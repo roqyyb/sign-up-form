@@ -9,6 +9,8 @@
 body {
   font-family: system-ui, sans-serif;
 
+  background-color: #f9fafb;
+
   display: flex;
 }
 aside {
@@ -16,4 +18,23 @@ aside {
 }
 main {
   flex-basis: auto;
+  min-height: 100vh;
+  margin-top: 10rem;
+  padding-left: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.23;
+  margin-bottom: 1.5rem;
+}
+
+main h1 {
+  margin-bottom: 2rem;
+  max-width: 70%;
+}
+
+main h2 {
+  margin-bottom: 3rem;
 }
