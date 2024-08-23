@@ -19,8 +19,7 @@ aside {
 main {
   flex-basis: auto;
   min-height: 100vh;
-  margin-top: 10rem;
-  padding-left: 3rem;
+  margin-top: 5rem;
 }
 
 h1,
@@ -37,4 +36,68 @@ main h1 {
 
 main h2 {
   margin-bottom: 3rem;
+}
+
+/* FORM */
+form {
+  width: 100%;
+}
+
+form header {
+  background: white;
+  padding: 1.5rem 3rem;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075);
+}
+
+form footer {
+  margin-left: 3rem;
+}
+
+input,
+label,
+button {
+  font-family: inherit;
+  line-height: 1.2;
+  font-size: 100%;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  color: #606771;
+}
+
+input {
+  padding: 0.4rem;
+  border: 1px solid;
+}
+
+form .row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 1rem;
+}
+
+.create-btn {
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  background: #596d48;
+  color: white;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+form footer > p {
+  font-weight: 500;
+}
+
+.login-btn {
+  border: none;
+  background: transparent;
+  color: #596d48;
+  font-weight: bold;
 }
