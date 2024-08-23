@@ -8,25 +8,41 @@
   </head>
   <body>
     <aside id="sidebar">
-      <div class="odin-logo">
-        <img src="odin-lined.png" alt="the odin logo" />
+      <div id="odin-logo">
+        <img
+          height="120"
+          width="120"
+          src="odin-lined.png"
+          alt="the odin logo"
+        />
         <span>Odin</span>
       </div>
+      <footer id="photo-credit">
+        <small
+          >Photo by
+          <a href="https://unsplash.com/@olenkasergienko">Olena Bohovyk</a> on
+          <a
+            href="https://unsplash.com/photos/green-fern-plant-in-close-up-photography-r0M9HrfJMBM"
+            >Unsplash</a
+          ></small
+        >
+      </footer>
     </aside>
 
     <main>
-      <h1>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. <br />
-        Sign up now to get started.
-      </h1>
+      <div class="hero">
+        <h1>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up now to get started.
+        </h1>
+        <h2>You know you want to.</h2>
+      </div>
 
-      <h2>You know you want to.</h2>
-
-      <form action="">
+      <form action="" method="get">
         <header>
           <h3>Let's do this!</h3>
-          <div class="row-1">
+          <div class="row row-1">
             <div>
               <label for="fname">First name</label>
               <input type="text" name="fname" id="fname" />
@@ -36,17 +52,22 @@
               <input type="text" name="lname" id="lname" />
             </div>
           </div>
-          <div class="row-2">
+          <div class="row row-2">
             <div>
               <label for="email">email</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="youremail@example.com"
+              />
             </div>
             <div>
               <label for="phone">Phone</label>
               <input type="tel" name="phone" id="phone" />
             </div>
           </div>
-          <div class="row-3">
+          <div class="row row-3">
             <div>
               <label for="pwd">Password</label>
               <input type="password" name="password" id="pwd" />
@@ -59,8 +80,11 @@
         </header>
 
         <footer>
-          <button type="submit">Create account</button>
-          <p>Already have an account ? <button type="button">Log in</button></p>
+          <button class="create-btn" type="submit">Create account</button>
+          <p>
+            Already have an account ?
+            <button class="login-btn" type="button">Log in</button>
+          </p>
         </footer>
       </form>
     </main>

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "norsebold";
+  src: url("/fonts/norsebold-webfont.woff2") format("woff2"),
+    url("/fonts/norsebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 ::after,
 ::before {
@@ -15,11 +23,18 @@ body {
 }
 aside {
   flex-basis: 50%;
+  height: 100vh;
+
+  background-image: url("olena-bohovyk-r0M9HrfJMBM-unsplash.jpg");
+  background-position: center;
 }
 main {
   flex-basis: auto;
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
   margin-top: 5rem;
+}
+main .hero {
+  margin-left: 3rem;
 }
 
 h1,
@@ -72,7 +87,7 @@ label {
 
 input {
   padding: 0.4rem;
-  border: 1px solid;
+  border: 1px solid #e5e7eb;
 }
 
 form .row {
@@ -85,7 +100,7 @@ form .row {
   padding: 10px 30px;
   border-radius: 8px;
   border: none;
-  background: #596d48;
+  background: #507935;
   color: white;
   text-transform: capitalize;
   margin: 2rem 0;
@@ -98,6 +113,43 @@ form footer > p {
 .login-btn {
   border: none;
   background: transparent;
-  color: #596d48;
+  color: #507935;
   font-weight: bold;
+}
+
+#odin-logo {
+  margin-top: 10rem;
+  background-color: black;
+  padding: 15px;
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#odin-logo img {
+  object-fit: contain;
+}
+#odin-logo span {
+  display: inline-block;
+  color: white;
+  font-family: "norsebold";
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+aside {
+  position: relative;
+}
+#photo-credit {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  color: white;
+  background-color: #507935;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+#photo-credit a {
+  color: inherit;
 }
